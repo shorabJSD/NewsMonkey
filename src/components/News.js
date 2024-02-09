@@ -101,7 +101,7 @@ handlePrevClick = async()=>{
 }
 handleNextClick = async ()=>{
   console.log("next");
-  if(!(this.state.page>Math.ceil(this.state.totalResults/this.props.pageSize))){
+  if((!this.state.page>Math.ceil(this.state.totalResults/this.props.pageSize))){
     this.setState({loading:true})
   let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=67b3952f470f43efbf6ac2362f47ef85&page=${this.state.page + 1}&pageSize=${this.props.pageSize}`;
   let data = await fetch(url);
