@@ -1,15 +1,30 @@
 
-<Route path="/business"><News pageSize={8} country="us" category="business"/></Route>
-<Route path="/entertainme"><News pageSize={8} country="us" category="entertainme</Route>
-<Route path="/general"><News pageSize={8} country="us" category="general"/></Route>
-<Route path="/health"><News pageSize={8} country="us" category="health"/></Route>
-<Route path="/science"><News pageSize={8} country="us" category="science"/></Route>
-<Route path="/sports"><News pageSize={8} country="us" category="sports"/></Route>
-<Route path="/technology"><News pageSize={8} country="us" category="technology"</Route>
+
+<Route path="/business" element={<News key={business} pageSize={8} country="us" category="business"/>}/>
+<Route path="/entertainment" element={<News key={entertainment} pageSize={8} country="us" category="entertainment"/>}/>
+<Route path="/general" element={<News key={general} pageSize={8} country="us" category="general"/>}/>
+<Route path="/health" element={<News key={health} pageSize={8} country="us" category="health"/>}/>
+<Route path="/science" element={<News key={science} pageSize={8} country="us" category="science"/>}/>
+<Route path="/sports" element={<News key={sports} pageSize={8} country="us" category="sports"/>}/>
+<Route path="/technology" element={<News key={technology} pageSize={8} country="us" category="technology"/>}/>
 
 
-<Route path="/about"><News pageSize={8} country="us" category="sports"/></Route>
+business
+entertainment
+general
+health
+science
+sports
+technology
 
+<li className="nav-item"><a className="nav-link active" aria-current="page" href="/home">Home</a></li>
+           <li className="nav-item"><a className="nav-link active" aria-current="page" href="/business">business</a></li>
+           <li className="nav-item"><a className="nav-link active" aria-current="page" href="/entertainment">entertainment</a></li>
+           <li className="nav-item"><a className="nav-link active" aria-current="page" href="/general">general</a></li>
+           <li className="nav-item"><a className="nav-link active" aria-current="page" href="/health">health</a></li>
+           <li className="nav-item"><a className="nav-link active" aria-current="page" href="/science">science</a></li>
+           <li className="nav-item"><a className="nav-link active" aria-current="page" href="/sports">sports</a></li>
+           <li className="nav-item"><a className="nav-link active" aria-current="page" href="/technology">technology</a></li>
 
 
 
